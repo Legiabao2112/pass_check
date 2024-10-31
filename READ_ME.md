@@ -2,20 +2,6 @@
 
 This Python script checks if passwords have been exposed in data breaches using the "Have I Been Pwned" API. It helps users determine if their passwords are secure or if they need to be changed.
 
-## Features
-- Supports multiple passwords through command-line arguments, file input, or interactive input.
-- Uses the "Have I Been Pwned" API to check for compromised passwords.
-- Masks passwords in output for improved privacy.
-- Provides a summary of compromised and safe passwords at the end of execution.
-
-## Requirements
-- Python 3.x
-- `requests` library
-
-To install the required library, run:
-```sh
-pip install requests
-```
 
 ## Usage
 
@@ -56,6 +42,3 @@ Summary: 1 password was found to be compromised, 1 password was safe.
 - Passwords are not sent directly to the API; only the first 5 characters of the SHA-1 hash are sent, ensuring greater privacy.
 - The rate limiting (`time.sleep(1)`) is used to avoid overwhelming the API with too many requests at once.
 
-
-## Disclaimer
-This script is for educational purposes only. The author is not responsible for any misuse of this tool or any consequences resulting from using weak or compromised passwords. Always use strong, unique passwords and consider using a password manager for better security.
