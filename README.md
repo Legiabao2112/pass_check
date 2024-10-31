@@ -38,6 +38,4 @@ Summary: 1 password was found to be compromised, 1 password was safe.
 ```
 
 ## Notes
-- The script uses the k-anonymity model provided by the "Have I Been Pwned" API to securely check if a password has been compromised.
-- Passwords are not sent directly to the API; only the first 5 characters of the SHA-1 hash are sent, ensuring greater privacy.
-- The rate limiting (`time.sleep(1)`) is used to avoid overwhelming the API with too many requests at once.
+- Passwords are not sent directly to the API; only the first 5 characters of the SHA-1 hash are sent, so you don't have to worry about security issues.
